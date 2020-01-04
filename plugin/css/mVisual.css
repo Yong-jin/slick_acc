@@ -1,0 +1,16 @@
+.mainCustom_wrap>article {position:relative;overflow:hidden;left:0;top:0;background:#fff;}
+.mainCustom_wrap>article>.artiWrap {overflow:hidden;max-width:1920px;height:100%;box-sizing:border-box;padding-left:160px !important;}
+.mainCustom_wrap>article::before,
+.mainCustom_wrap>article::after,
+.mainCustom_wrap>article>.artiWrap::before {content:'';display:none;position:absolute;top:0;width:1px;height:120%;background:#a2a2ad;opacity:0.3;z-index:2;}/*190924학교요청 삭제*/
+.mainCustom_wrap>article::before {left:560px;}
+.mainCustom_wrap>article::after {left:960px}
+.mainCustom_wrap>article>.artiWrap::before {left:1359px;}
+.mainCustom_wrap>article.on {display:block;z-index:100;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;-ms-transform-style:preserve-3d;}
+.mainCustom_wrap>article.on>.artiWrap {overflow-x:hidden;overflow-y:auto;}
+.mainCustom_wrap>article.on.prevDown {
+    overflow:hidden;
+    transform:scale3d(0.9, 0.9, 0.9);
+    -webkit-transform:scale3d(0.9, 0.9, 0.9);
+    opacity:0.7;transition:0.4s;
+}
